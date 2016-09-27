@@ -2,6 +2,12 @@
 
 {% block body %}
     <h1>main</h1>
+        {% for new in news %}
+            <div class="wrap">
+            <h1>{{ new['name'] }}</h1>
+            <p>{{ new['text']|raw }}</p>
+                </div>
+        {% endfor %}
 {% endblock %}
 
 {% block stylesheets %}

@@ -3,7 +3,25 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {#{% block stylesheets %}{% endblock %}#}
+        <style>
+            ul {
+                list-style: none;
+            }
+            ul li {
+                display: inline-block;
+            }
+            h1, p {
+                text-align: center;
+            }
+            .wrap {
+                margin-bottom: 150px;
+            }
+            img {
+                width: 300px;
+                height: 200px;
+            }
+        </style>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
