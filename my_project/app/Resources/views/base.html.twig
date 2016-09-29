@@ -27,15 +27,18 @@
             .wrap {
                 background: gray;
             }
+            .active {
+                color: green;
+            }
         </style>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
     <nav>
         <ul>
-            <li><a href="./home">Главная</a></li>
-            <li><a href="./news">Новости</a></li>
-            <li><a href="./create">Создать</a></li>
+            <li><a href="./home" {% if current=='main' %} class="active"{% endif %}>Главная</a></li>
+            <li><a href="./news" {% if current=='news' %} class="active"{% endif %}>Новости</a></li>
+            <li><a href="./create" {% if current=='info' %} class="active"{% endif %}>Создать</a></li>
         </ul>
     </nav>
         {% block body %}{% endblock %}

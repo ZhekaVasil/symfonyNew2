@@ -30,7 +30,7 @@ class InfoController extends Controller
             $text = 'Not submitted yet';
         }
 
-        return $this->render('default/info.html.twig', array('name' => $name, 'text' => $text));
+        return $this->render('default/info.html.twig', array('name' => $name, 'text' => $text, 'current' => 'info'));
         
     }
 

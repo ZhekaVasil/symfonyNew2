@@ -18,6 +18,7 @@ class NewsController extends Controller
         // replace this example code with whatever you need
         return $this->render('default/news.html.twig', [
             'news' => $news,
+            'current' => 'news'
         ]);
     }
 }
