@@ -1,7 +1,18 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-   <h1>Info</h1>
+   <h1>Create</h1>
+   <form name="input" method="post" action="">
+      <fieldset>
+         <legend>Создать новость</legend>
+         <label>Название новости: <input type="text" name="name"></label>
+         <label>Текст новости: <input type="text" name="text"></label>
+         <input type="submit" name="submit" value="Создать">
+      </fieldset>
+
+   </form>
+      <p>Name: {{ name }} </p>
+      <p>Text: {{ text }} </p>
 {% endblock %}
 
 {% block stylesheets %}
