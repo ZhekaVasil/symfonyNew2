@@ -14,7 +14,7 @@ class NewsController extends Controller
     public function indexAction(Request $request)
     {
         $conn = $this->get('database_connection');
-        $news = $conn->fetchAll('SELECT * FROM news');
+        $news = $conn->fetchAll('SELECT * FROM news ORDER BY id DESC');
         // replace this example code with whatever you need
         return $this->render('default/news.html.twig', [
             'news' => $news,

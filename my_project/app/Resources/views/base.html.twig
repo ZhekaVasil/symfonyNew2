@@ -14,12 +14,18 @@
             h1, p {
                 text-align: center;
             }
+            nav + h1 {
+                color: red;
+            }
             .wrap {
                 margin-bottom: 150px;
             }
             img {
                 width: 300px;
                 height: 200px;
+            }
+            .wrap {
+                background: gray;
             }
         </style>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
@@ -29,7 +35,7 @@
         <ul>
             <li><a href="./home">Главная</a></li>
             <li><a href="./news">Новости</a></li>
-            <li><a href="./info">Информация</a></li>
+            <li><a href="./create">Создать</a></li>
         </ul>
     </nav>
         {% block body %}{% endblock %}
