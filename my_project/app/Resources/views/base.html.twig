@@ -34,13 +34,13 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-    <nav>
+    {#<nav>
         <ul>
             <li><a href="./home" {% if current=='main' %} class="active"{% endif %}>Главная</a></li>
             <li><a href="./news" {% if current=='news' %} class="active"{% endif %}>Новости</a></li>
             <li><a href="./create" {% if current=='info' %} class="active"{% endif %}>Создать</a></li>
         </ul>
-    </nav>
+    </nav>#}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
